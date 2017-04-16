@@ -176,7 +176,7 @@
         // .mbr-social-likes
         if ($.fn.socialLikes){
             $(document).on('add.cards', function(event){
-                $(event.target).outerFind('.mbr-social-likes:not(.mbr-added)').on('counter.social-likes', function(event, service, counter){
+                $(event.target).outerFind('.mbr-social-likes:not(.mbr-added)').on('experienceCounter.social-likes', function(event, service, counter){
                     if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
                 }).socialLikes({initHtml : false});
             });

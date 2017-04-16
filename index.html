@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Site made with Mobirise Website Builder v3.12.1, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  <meta name="description" content="">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="">
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
-  <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+    <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <!-- Styles for ProgressBar.js -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/progressbarjs-custom-css.css">
+
+    <style>
+        .progress {
+            height: 300px;
+        }
+        .progress > svg {
+            height: 100%;
+            display: block;
+        }
+    </style>
   
 </head>
 <body>
@@ -245,7 +256,7 @@
   --
   -------------
   ------------->
-
+<section id="waypoint-trigger-how-cards"></section>
 <section class="mbr-section mbr-section__container article" id="header3-3" style="background-color: rgb(61, 142, 185); padding-top: 60px; padding-bottom: 60px;">
     <div class="container">
         <div class="row">
@@ -267,13 +278,16 @@
     <div class="mbr-cards-row row">
         <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container">
-              <div class="card cart-block">
-                  <div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-notebook mbr-iconfont mbr-iconfont-features3"></a></div>
+              <div id="education-card" class="card cart-block">
+                  <div class="card-img"><img src="assets/images/007-diploma-2.svg" /></div>
                   <div class="card-block">
-                    <h4 class="card-title">Education</h4>
-                    
-                    <p class="card-text">2010 marked the start of my trek down this path, one which will never end. From TRU I've obtained a double degree in both Business and Computer Science. From work, personal contracts, and interest I've gained been educated and gained experience in dozens of fields. Learning Is a constant, but with experience it becomes less of an uphill battle.</p>
-                    <div class="card-btn"><a href="https://mobirise.com" class="btn btn-primary">MORE</a></div>
+                      <div class="countup" id="educationCounter"></div>
+                      <h4 class="card-title">Education</h4>
+
+                      <div class="progress" id="educationBar"></div>
+
+                      <p class="card-text">2010 marked the start of my trek down this path, one which will ne end. From TRU I've obtained a double degree in both Business and Computer Science. From work, personal contracts, and interest I've gained been educated and gained experience in dozens of fields. Learning Is a constant, but with experience it becomes less of an uphill battle.</p>
+                      <div class="card-btn"><a href="https://mobirise.com" class="btn btn-primary">MORE</a></div>
                     </div>
                 </div>
             </div>
@@ -281,8 +295,9 @@
         <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container">
                 <div class="card cart-block">
-                    <div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-mobile mbr-iconfont mbr-iconfont-features3"></a></div>
+                    <div class="card-img"><img src="assets/images/003-administrator.svg" /></div>
                     <div class="card-block">
+                        <div class="countup" id="experienceCounter"></div>
                         <h4 class="card-title">Experience</h4>
                         
                         <p class="card-text">5+ years of diverse industry experience.&nbsp;<br>Employed by a handful of unique industry leaders.<br>Numerous contracted works.<br>I tinker a lot.</p>
@@ -294,7 +309,8 @@
         <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container">
                 <div class="card cart-block">
-                    <div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-pencil mbr-iconfont mbr-iconfont-features3"></a></div>
+                    <div class="card-img"><img src="assets/images/001-network.svg" /></div>
+                    <!--<div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-pencil mbr-iconfont mbr-iconfont-features3"></a></div>-->
                     <div class="card-block">
                         <h4 class="card-title">Network</h4>
                         
@@ -307,8 +323,10 @@
         <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container">
                 <div class="card cart-block">
-                    <div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-global mbr-iconfont mbr-iconfont-features3"></a></div>
+                    <div class="card-img"><img src="assets/images/011-coffee.svg" /></div>
+                    <!--<div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-global mbr-iconfont mbr-iconfont-features3"></a></div>-->
                     <div class="card-block">
+
                         <h4 class="card-title">Coffee</h4>
                         
                         <p class="card-text">I like to think that I am a marketable "widget" that can turn coffee into results. It's truly an awesome feature of enginuity. See it for yourself!&nbsp;</p>
@@ -467,17 +485,22 @@
   --    Area for scripts and pie
   ------------>
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
-  <script src="assets/jarallax/jarallax.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+    <script src="assets/dropdown/js/script.min.js"></script>
+    <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
+    <script src="assets/jarallax/jarallax.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!--<script src=experienceCounternter.js"></script>-->
+    <script src="node_modules/countup.js/countUp.js"></script>
+    <script src="js/howCardAnimationBar.js"></script>
+    <script src="js/coffeeCup.js"></script>
+
   <input name="animation" type="hidden">
   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a></div>
   </body>

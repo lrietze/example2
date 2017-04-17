@@ -23,6 +23,7 @@
     <!-- Styles for ProgressBar.js -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/progressbarjs-custom-css.css">
+    <link rel="stylesheet" href="css/scrambletext-style.css">
 
     <style>
         .progress {
@@ -281,8 +282,9 @@
               <div id="education-card" class="card cart-block">
                   <div class="card-img"><img src="assets/images/007-diploma-2.svg" /></div>
                   <div class="card-block">
-                      <div class="countup" id="educationCounter"></div>
-                      <h4 class="card-title">Education</h4>
+
+                      <h4 class="card-title"><div class="countup" id="educationCounter"></div> Degrees</h4>
+                      <h5>Plus more!</h5>
 
                       <div class="progress" id="educationBar"></div>
 
@@ -297,8 +299,8 @@
                 <div class="card cart-block">
                     <div class="card-img"><img src="assets/images/003-administrator.svg" /></div>
                     <div class="card-block">
-                        <div class="countup" id="experienceCounter"></div>
-                        <h4 class="card-title">Experience</h4>
+
+                        <h4 class="card-title"><div class="countup" id="experienceCounter"></div> Years of Experience</h4>
                         
                         <p class="card-text">5+ years of diverse industry experience.&nbsp;<br>Employed by a handful of unique industry leaders.<br>Numerous contracted works.<br>I tinker a lot.</p>
                         <div class="card-btn"><a href="https://mobirise.com" class="btn btn-primary">MORE</a></div>
@@ -312,7 +314,12 @@
                     <div class="card-img"><img src="assets/images/001-network.svg" /></div>
                     <!--<div class="card-img"><a href="https://mobirise.com" class="etl-icon icon-pencil mbr-iconfont mbr-iconfont-features3"></a></div>-->
                     <div class="card-block">
-                        <h4 class="card-title">Network</h4>
+                        <h4 class="card-title">
+                            <div class="scramble-text-container">
+                                <div class="scramble-text"></div>
+                            </div>
+                            Network
+                        </h4>
                         
                         <p class="card-text">"Quote about every great man having great people".&nbsp;<br>I accept the limitation of my knowledge when I encounter it. I have a network of friends, colleages, and contacts in a wide spectrum of fields who I lean on for insight when necessary.&nbsp;</p>
                         <div class="card-btn"><a href="https://mobirise.com" class="btn btn-primary">MORE</a></div>
@@ -496,10 +503,9 @@
     <script src="assets/theme/js/script.js"></script>
     <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <!--<script src=experienceCounternter.js"></script>-->
     <script src="node_modules/countup.js/countUp.js"></script>
     <script src="js/howCardAnimationBar.js"></script>
-    <script src="js/coffeeCup.js"></script>
+    <script src="js/scrambletext.js"></script>
 
   <input name="animation" type="hidden">
   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a></div>

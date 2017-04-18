@@ -21,9 +21,9 @@ function documentLoaded()
 {
     console.log('tilt');
     initializeWaypoints();
-    initializeProgressBars();
+    // initializeProgressBars();
     initializeCounters();
-}
+} 
 /**
  * You can make multiple waypoints just copy the one below for each "checkpoint" on the page
  * So the element is the div or whatever element on he page and the handler is what is fired when it hits that element.
@@ -101,7 +101,7 @@ function initializeCounters() {
  */
 function triggerHowCardAnimations()
 {
-    bar.animate(1);
+    // bar.animate(1);
 
     educationCounter.start();
 
